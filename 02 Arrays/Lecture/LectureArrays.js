@@ -20,8 +20,16 @@ for (let i = 0; i < myArr.length; i++){
     }
 }
 
+//for ARRAYs
 for (let item of myArr){
     console.log(item);
+}
+
+//for OBJECTS
+let obj = {a: 1, b: 2}
+
+for (const key in obj) {
+    console.log(`obj.${key} = ${obj[key]}`)
 }
 
 //spred operator or rest operator ...
