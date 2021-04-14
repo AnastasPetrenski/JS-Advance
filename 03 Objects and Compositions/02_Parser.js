@@ -6,4 +6,10 @@ let parser = {
     reset() { count = 0}
 }
 
-parser[command]();
+parser.increment(count);
+
+console.log(count);
+
+const result = 5 > 7 ? 4 : 10;
+
+console.log(result);

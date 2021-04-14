@@ -126,3 +126,21 @@ function aggregateElements(numbers){
 
 let arr11 = [1, 2, 3];
 console.log(aggregateElements(arr11));
+
+//Custom float
+function division(input){
+    const bool = Number.isNaN(input)
+        console.log(bool)
+    
+    const type = typeof input;
+    console.log(type)
+    
+    const result = input/10;
+
+    const modulo = input % 2;
+    console.log(result, modulo);
+}
+
+division(6.60);
+division('5')
+division(NaN);
