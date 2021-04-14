@@ -47,7 +47,7 @@ function takeRest(...params){
 takeRest(1,2);
 takeRest(1,2,3,4);
 
-//Splice => RemoveAt/RemoveAll
+//Splice => RemoveAt/RemoveAll/Replace
 let nums = [1,3,4,5,6,7,8];
 nums.splice(1, 0, 2); //insert at index 1 (add 2)
 
@@ -61,7 +61,7 @@ nums.splice(4,5,99);
 
 console.log(nums.join(" "));
 
-//Fill =>
+//Fill => ReplaceAll
 
 let arr = [1,2,3,4];
 
