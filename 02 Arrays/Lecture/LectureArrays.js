@@ -103,6 +103,9 @@ console.log(take2ElementsStartFromEnd.join(' '));
 console.log(testString.slice(-4));
 console.log(testString.slice(7, -4));
 
+//Remove first and last element from array
+let slice = buket.slice(1,-1);
+
 //Includes => .Contains()
 console.log(unsorted.includes(2)); //true 
 console.log(unsorted.includes(2, 1)); //false start searching from index 1
