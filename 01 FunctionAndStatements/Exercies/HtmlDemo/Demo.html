@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="calculator.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <input type="text" placeholder="Enter number..." id="first">
-    <input type="text" placeholder="Enter number..." id="second">
-    <input type="submit" onclick="printResult()"/>
-    <input type="submit" onclick="randomResult()"/>
+    <h1 class="bg-primary text-white text-center">
+        <p>DOM Example</p>
+        <li>DOM Example Preparation</li>
+    </h1>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="col-lg-8">
+                <button class="btn btn-primary" type="submit" onclick="extractText()">Extract Text</button>
+                <button class="btn btn-primary" type="submit" onclick="clearText()">Clear Text</button>
+                <button class="btn btn-primary" type="submit" onclick="showText()">Show Text</button>
+                <button class="btn btn-primary" type="submit" onclick="hideext()">Hide Text</button>
+                <div class="col-lg-1">
+                    <textarea name="area" id="area" cols="30" rows="5" style="display: none;">
+
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <table class="table" border="2">
+                <thead>
+                    <tr>
+                        <th>Maker</th>
+                        <th>Model</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BMW</td>
+                        <td>320</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>520</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Mercedes</td>
+                        <td>320</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes</td>
+                        <td>180</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-lg-2"> <button class="btn btn-primary" type="submit"
+                        onclick="colorize()">Colorize</button>
+                </div>
+
+                <div class="col-lg-2"><button class="btn btn-primary" type="submit" onclick="totalSum()">Total</button>
+                </div>
+                <div>
+                    <input type="text" readonly="readonly" id="totalSum">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <ul>
+                <li>Keks</li>
+                <li>Meks</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+
+        <br />
+        <br />
+        <div>
+            <input type="text" placeholder="Enter number..." id="first">
+            <input type="text" placeholder="Enter number..." id="second">
+            <input type="text" placeholder="Result..." id="result" readonly="readonly">
+        </div>
+        <br />
+        <div>
+            <button class="btn btn-secondary" type="submit" onclick="printResult()" name="multiresult">Multi
+                result</button>
+            <button class="btn btn-secondary" type="submit" onclick="randomResult()">Random result</button>
+            <button class="btn btn-primary" type="submit" onclick="result()">Result</button>
+        </div>
+        <hr />
+        <span>
+            <p id='text'>
+                Test (Bulgaria) take all (Text) wich is sarounded in (breaks) 
+                <button class="btn btn-primary" onclick="getText()">GetText</button>
+            </p>
+        </span>
+        <hr />
+        <script>
+            function start() {
+                const elements = document.getElementsByTagName('li');
+                return elements;
+            }
+        </script>
+
 </body>
+
 </html>
