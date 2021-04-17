@@ -11,7 +11,7 @@ function solve(input){
         }
 
         dictionary[singleLetter].push({name, price: Number(price)});
-        //
+        
         dictionary[singleLetter].sort((a, b) => (a.name).localeCompare(b.name));
     }
 

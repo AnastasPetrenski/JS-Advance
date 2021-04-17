@@ -40,13 +40,47 @@ function clearText() {
     document.getElementById('area').value = '';
 }
 
-function showText() {
-    document.getElementById('area').style.display = 'inline';
+function parseJSON() {
+    let input = JSON.parse(document.querySelector('#area').value);
+
+    let objValues = [];
+    for (const obj of input) {
+        if(typeof obj == 'object'){
+            let values = (Object.values(obj));
+            let data = JSON.stringify(obj);
+            objValues.push(values);
+        } else {
+            console.log(obj);
+            objValues.push(obj);
+        };
+    }
+
+    console.log(input);
+    //let json = JSON.parse(input);
+    document.getElementById('area').value = objValues.join('\n');
+
+    //JSON.stringify Object.values()
+    [{"Name":"Stamat", "Score":5.5},
+    {"Name":"Rumen", "Score": 4.5}]
+    //JSON.parse()
+    ["Hutt - Pesho 500, Sasho 2000",
+    "Victoria - Jo 3333, Seva 442"]
+
 }
 
-function hideText() {
-    document.getElementById('area').remove();
+function showText() {
+    
+    const children = document.querySelector('#areaBtns').children[2];
+    
+    if (children.textContent.startsWith('Show')) {
+        document.getElementById('area').style.display = 'inline';
+        children.textContent = 'Hide text'   
+    } else {
+        document.getElementById('area').style.display = 'none';
+        children.textContent = 'Show text'   
+    }
 
+    
 }
 
 function colorize() {

@@ -39,3 +39,4 @@ function JsonToHTMLTable(input){
 
 JsonToHTMLTable(['{"Name":"Stamat", "Score":5.5}',
 '{"Name":"Rumen", "Score": 4.5}'])
+

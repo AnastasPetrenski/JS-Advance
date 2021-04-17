@@ -9,7 +9,6 @@ const myObj = {
         return `${this.firstName} ${this.middleName} ${this.lastName}`;
     }
 }
-
 const array2 = [{myObj}];
 
 let array = [{Name:"Stamat", Score:5.5},
