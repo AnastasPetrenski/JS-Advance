@@ -9,5 +9,5 @@ function addItem() {
     document.getElementById('newItemText').value = '';
     document.getElementById('newItemValue').value = "";
 
-    console.log('TODO:...');
+  
 }
