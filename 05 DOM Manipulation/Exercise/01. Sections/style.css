@@ -17,6 +17,11 @@ body {
     background: #5555ff;
     text-align: center;
     border-radius: 4px;
+    background-image: url('./Nisus.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top:68px;
+    margin-bottom:50px;
 }
 
 #content div p {

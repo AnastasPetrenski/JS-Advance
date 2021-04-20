@@ -27,7 +27,7 @@ function create(words) {
          console.log('DIV out')
       } else if (ev.target.tagName === 'P') {
          ev.target.style.display = 'none';
-         console.log('P out')
+         console.log('DIV out')
       }
    });
 
