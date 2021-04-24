@@ -29,7 +29,7 @@ function solve() {
     const check = e('input');
     check.type = 'checkbox';
 
-    const element =
+    const element = 
      e('tr',
       e(e('td', img)),
       td(e('p', data.name)),
